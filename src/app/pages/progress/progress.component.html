@@ -1,0 +1,52 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <!-- This is some text within a card block. -->
+                <h4 class="card-title">Striped Progress bar <a class="get-code" data-toggle="collapse" href="#pgr3" aria-expanded="true"><i class="fa fa-code" title="Get Code" data-toggle="tooltip"></i></a></h4>
+                        
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-primary progress-bar-striped active" 
+                        style="height:10px;" 
+                        [style.width]="getProgreso1"
+                        role="progressbar">  
+                    </div>
+                </div>
+
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-primary progress-bar-striped active" 
+                        style="height:10px;"
+                        [style.width]="getProgreso2" 
+                        role="progressbar">  
+                    </div>
+                    <!-- [style.width]="getPorcentage" -->
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementator (valorSalida)="progres1 = $event" 
+                                    [progress]="progres1"
+                                    btnClass="btn-info" ></app-incrementator>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body"> 
+                <app-incrementator (valorSalida)="progres2 = $event" 
+                                    [progress]="progres2"
+                                    ></app-incrementator>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    
+

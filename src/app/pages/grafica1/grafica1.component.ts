@@ -9,10 +9,6 @@ import { ChartData, ChartEvent, ChartType } from 'chart.js';
 })
 export class Grafica1Component implements OnInit {
 
-  
-
-
-
   // Doughnut
   public doughnutChartLabels: string[] = [
     'Download Sales',

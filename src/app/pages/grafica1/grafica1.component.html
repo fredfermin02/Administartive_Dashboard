@@ -1,18 +1,27 @@
 <div class="row">
     <div class="col-6">
-        <div class="card">
-            <div class="card-body">
+        
+        <app-dougnut title="Ventas"></app-dougnut>
 
-                <canvas
-                    baseChart
-                    class="chart"
-                    [data]="doughnutChartData"
-                    [type]="doughnutChartType"
-                    >
-                </canvas>
+    </div>
 
-            </div>
-        </div>
+    <div class="col-6">
+        
+        <app-dougnut    [lables]="labels1"
+                       [data]="data1" ></app-dougnut>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        
+        <app-dougnut></app-dougnut>
+    </div>
+    <div class="col-6">
+        
+        <app-dougnut></app-dougnut>
+
     </div>
 </div>
 

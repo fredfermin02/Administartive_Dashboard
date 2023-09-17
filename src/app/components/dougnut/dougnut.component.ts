@@ -19,6 +19,7 @@ export class DougnutComponent {
       'In-Store Sales',
       'Mail-Order Sales',
     ];
+    
     @Input('data')
     public doughnutChartData: ChartData<'doughnut'> = {
       labels: this.doughnutChartLabels,

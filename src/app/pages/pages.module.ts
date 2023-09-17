@@ -12,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
+import { AcountSettingComponent } from './acount-setting/acount-setting.component';
 
 
 
@@ -21,7 +22,8 @@ import { PagesComponent } from './pages.component';
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
+    AcountSettingComponent
   ],
 
   imports: [
@@ -37,7 +39,9 @@ import { PagesComponent } from './pages.component';
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
+    AcountSettingComponent
+
   ],
   
 })

@@ -13,6 +13,8 @@ import { ProgressComponent } from './progress/progress.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
 import { AcountSettingComponent } from './acount-setting/acount-setting.component';
+import { PromesesComponent } from './promeses/promeses.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -23,7 +25,9 @@ import { AcountSettingComponent } from './acount-setting/acount-setting.componen
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-    AcountSettingComponent
+    AcountSettingComponent,
+    PromesesComponent,
+    RxjsComponent
   ],
 
   imports: [

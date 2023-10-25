@@ -22,10 +22,12 @@ import { AuthModule } from './auth/auth.module';
     
   ],
   imports: [
+
     BrowserModule,
     AppRoutingModule,
     PagesModule,
     AuthModule,
+
 
   ],
   providers: [],

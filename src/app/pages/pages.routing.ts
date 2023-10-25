@@ -1,5 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
+import { authGuard } from '../guards/auth.guard';
 
 import { PagesComponent } from './pages.component';
 
@@ -14,6 +15,7 @@ const routes: Routes = [
     {
         path:'dashboard',
         component:PagesComponent,
+        canActivate:[authGuard],
         children:[
         {path:'progress',component:ProgressComponent, data:{title: 'Progress'}},
         {path:'graphic1',component:Grafica1Component,data:{title: 'Graphic'}},
@@ -21,9 +23,8 @@ const routes: Routes = [
         {path:'promeses',component:PromesesComponent ,data:{title: 'Promeses'}},
         {path:'rxjs',component:RxjsComponent ,data:{title: 'RXJS'}},
         {path:'',component:DashboardComponent ,data:{title: 'Dashboard'}}
-
         ]
-  }
+  } 
 ];
 
 @NgModule({

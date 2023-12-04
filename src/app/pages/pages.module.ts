@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from "@angular/router";
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -15,6 +15,7 @@ import { PagesComponent } from './pages.component';
 import { AcountSettingComponent } from './acount-setting/acount-setting.component';
 import { PromesesComponent } from './promeses/promeses.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -27,7 +28,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     PagesComponent,
     AcountSettingComponent,
     PromesesComponent,
-    RxjsComponent
+    RxjsComponent,
+    ProfileComponent
   ],
 
   imports: [
@@ -36,7 +38,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     SharedModule,
     RouterModule,
     ComponentsModule,
-    
+    ReactiveFormsModule
   ],
 
   exports:[
